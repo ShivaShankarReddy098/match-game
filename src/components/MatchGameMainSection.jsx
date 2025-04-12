@@ -173,7 +173,7 @@ export default function MatchGameMainSection() {
       />
 
       {gameOver ? (
-        <div className="relative mt-6 z-50 flex flex-col items-center justify-center px-4">
+        <div className="relative mt-1 z-50 flex flex-col items-center justify-center px-4">
           <img
             src="/match-game-score-card-lg-bg.png"
             alt="match-game-over"
