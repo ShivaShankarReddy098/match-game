@@ -117,9 +117,10 @@ export default function MatchGameMainSection() {
   const intervalRef = useRef(null);
 
   const generateRandomImage = () => {
-    const random = imagesList[Math.floor(Math.random() * imagesList.length)];
-    setRandomImage(random);
-    setActiveTab(random.category);
+    const randomIndex = Math.floor(Math.random() * imagesList.length);
+    const randomImage = imagesList[randomIndex];
+    setRandomImage(randomImage);
+    setActiveTab(randomImage.category);
   };
   const startTimer = () => {
     intervalRef.current = setInterval(() => {
